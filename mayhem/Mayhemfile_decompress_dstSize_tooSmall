@@ -1,0 +1,9 @@
+project: savantenvs/zstd
+target: decompress_dstSize_tooSmall
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/decompress_dstSize_tooSmall/testsuite
+cmds:
+  - cmd: /mayhem/decompress_dstSize_tooSmall
+    libfuzzer: true
+    timeout: 10

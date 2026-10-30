@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: raw_dictionary_round_trip
+cmds:
+  - cmd: /mayhem/raw_dictionary_round_trip
+    libfuzzer: true
+    timeout: 10

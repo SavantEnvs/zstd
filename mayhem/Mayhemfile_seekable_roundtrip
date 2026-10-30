@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: seekable_roundtrip
+cmds:
+  - cmd: /mayhem/seekable_roundtrip
+    libfuzzer: true
+    timeout: 10

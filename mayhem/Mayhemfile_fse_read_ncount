@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: fse_read_ncount
+cmds:
+  - cmd: /mayhem/fse_read_ncount
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: block_decompress
+cmds:
+  - cmd: /mayhem/block_decompress
+    libfuzzer: true
+    timeout: 10

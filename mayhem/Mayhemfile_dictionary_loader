@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: dictionary_loader
+cmds:
+  - cmd: /mayhem/dictionary_loader
+    libfuzzer: true
+    timeout: 10

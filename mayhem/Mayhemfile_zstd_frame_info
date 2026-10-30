@@ -1,0 +1,9 @@
+project: savantenvs/zstd
+target: zstd_frame_info
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/zstd_frame_info/testsuite
+cmds:
+  - cmd: /mayhem/zstd_frame_info
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/zstd
+target: stream_round_trip
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/stream_round_trip/testsuite
+cmds:
+  - cmd: /mayhem/stream_round_trip
+    libfuzzer: true
+    timeout: 10

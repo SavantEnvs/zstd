@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: huf_decompress
+cmds:
+  - cmd: /mayhem/huf_decompress
+    libfuzzer: true
+    timeout: 10

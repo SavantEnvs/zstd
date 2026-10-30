@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: huf_round_trip
+cmds:
+  - cmd: /mayhem/huf_round_trip
+    libfuzzer: true
+    timeout: 10

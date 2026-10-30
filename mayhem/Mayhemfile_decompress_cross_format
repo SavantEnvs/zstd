@@ -1,0 +1,9 @@
+project: savantenvs/zstd
+target: decompress_cross_format
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/decompress_cross_format/testsuite
+cmds:
+  - cmd: /mayhem/decompress_cross_format
+    libfuzzer: true
+    timeout: 10

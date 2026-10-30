@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: sequence_compression_api
+cmds:
+  - cmd: /mayhem/sequence_compression_api
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: dictionary_decompress
+cmds:
+  - cmd: /mayhem/dictionary_decompress
+    libfuzzer: true
+    timeout: 10

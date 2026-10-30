@@ -1,0 +1,6 @@
+project: savantenvs/zstd
+target: generate_sequences
+cmds:
+  - cmd: /mayhem/generate_sequences
+    libfuzzer: true
+    timeout: 10

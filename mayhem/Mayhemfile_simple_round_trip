@@ -1,0 +1,9 @@
+project: savantenvs/zstd
+target: simple_round_trip
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/simple_round_trip/testsuite
+cmds:
+  - cmd: /mayhem/simple_round_trip
+    libfuzzer: true
+    timeout: 10

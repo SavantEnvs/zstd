@@ -1,0 +1,9 @@
+project: savantenvs/zstd
+target: simple_decompress
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/simple_decompress/testsuite
+cmds:
+  - cmd: /mayhem/simple_decompress
+    libfuzzer: true
+    timeout: 10
